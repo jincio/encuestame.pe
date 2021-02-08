@@ -2,7 +2,7 @@ var st = $(window).scrollTop();
     var b = 0;
 
     $(window).scroll(function() {
-        if (st <= 500) {
+        if (st <= 1300) {
             if (b == 0) {
                 $('.counter').each(function() {
                     var $this = $(this),
