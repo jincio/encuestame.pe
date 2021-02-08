@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuestame.pe</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/code.js"></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="img/logo_slogan_color.png" alt="Logo Encuestame.pe">
+        <div class="logo">
+            <img src="img/logo_slogan_color.png" alt="">
+        </div>
         <div class="menu">
             <ul>
                 <li>¿Quienes somos?</li>
@@ -19,27 +26,40 @@
             </ul>
         </div>
         <div class="redes">
-            <a target="_blank" href="https://www.facebook.com/encuestamepetuopinionvale/"><img src="img/logotipo-circular-de-facebook.png" alt=""></a>
+            <img src="img/logotipo-circular-de-facebook.png" alt="">
         </div>
     </header>
     <main>
         <section class="portada">
             <!--Slider de portada-->
         </section>
-        <section class="container">
+        <section class="container info-encuestamepe">
             <h2>¿Qué es encuestame.pe?</h2>
             <p>Somos una empresa peruana que cuenta con profesionales con más de 10 años de experiencia en estudios sociales. Utilizamos diversos algoritmos y enfoques para lograr obtener información representativa y válida. Nos enfocamos en diseños experimentales y semi-experimentales</p>
             <!--Descripción-->
         </section>
         <section class="container">
-            <div class="cifra">
-                <!--Personas que respondieron encuestas-->
-            </div>
-            <div class="cifra">
-                <!--Encuestas han sido creadas-->
-            </div>
-            <div class="cifra">
-                <!--Soles regalados en premios-->
+            <div class="cifras">
+                <div class="cifras-site">
+                    <div class="cifras-bloque num">
+                        <div class="auto num-text">
+                            <span class="counter" data-count="4">0</span>
+                            <p>Encuestas han sido realizadas</p>
+                        </div>
+                    </div>
+                    <div class="cifras-bloque num">
+                        <div class="auto num-text">
+                            <span class="counter" data-count="4078">0</span>
+                            <p>Personas han participado</p>
+                        </div>
+                    </div>
+                    <div class="cifras-bloque num">
+                        <div class="auto num-text">
+                            <span class="counter" data-count="1400">0</span>
+                            <p>Soles han sido repartidos en premios</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container">
@@ -47,20 +67,28 @@
                 <!--Videos de ganadores-->
             </div>
         </section>
-        <section class="container">
-            <!--Formulario de contacto-->
+        <section class="container contacto">
+            <h2>Contacto</h2>
+            <form action="">
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="nombre y apellido">
+                <textarea name="" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
     <footer>
-        <div class="footer-row">
-            <img src="img/logo_slogan_color.png" alt="Logo Encuestame.pe">
-        </div>
-        <div class="footer-row">
-            <p><!--Dirección fiscal--></p>
-            <a href=""><p>Términos y condiciones</p></a>
-        </div>
-        <div class="footer-row">
-            <a href="https://www.facebook.com/encuestamepetuopinionvale/"><img src="img/logotipo-circular-de-facebook.png" alt=""></a>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="img/logo_slogan_color.png" alt="Logo Encuestame.pe">
+            </div>
+            <div class="footer-row">
+                <a href=""><p>Términos y condiciones</p></a>
+                <a href=""><p>Dirección fiscal</p></a>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/encuestamepetuopinionvale/"><img src="img/logotipo-circular-de-facebook.png" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
