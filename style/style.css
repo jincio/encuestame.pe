@@ -24,7 +24,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
 }
-p {
+p, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -90,22 +90,86 @@ p {
 
 .videos {
     height: 500px;
-    background-color: brown;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 40px;
+}
+.container-videos h2 {
+    text-align: center;
+    margin-top: 40px;
 }
 
-.contacto h2 {
+.container-productos {
+    margin-top: 70px;
+}
+.productos {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.product {
+    color: #000;
+    max-width: 800px;
+    height: 165px;
+    padding: 13px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.product-1 {
+    background-color: #FD2D15;
+}
+.product-2 {
+    background-color: #40A629;
+}
+.product-3 {
+    background-color: #feb82c;
+}
+.product h3 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.product p{
+    font-size: 20px;
+}
+
+.contacto h2, .container-productos h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 form {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 input, textarea {
     margin: 10px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding-left: 4px;
+}
+input {
+    height: 30px;
+}
+input[type="submit"] {
+    border: solid 2px #1C99C4;
+    background-color: #fff;
+    color: #1C99C4;
+    border-radius: 11px;
+    height: 36px;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #1C99C4;
+    color: #fff;
 }
 
 .footer-container {
@@ -127,6 +191,16 @@ footer {
     background: #e8e8e8;
     margin-top: 100px;
     border-top: solid 20px #1C99C4;
+}
+.footer-row a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+.footer-row p {
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 /*Cifras*/
