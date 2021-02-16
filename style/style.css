@@ -1,6 +1,9 @@
 * {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .portada {
     background-attachment: video;
 }
@@ -26,6 +29,10 @@ h2 {
 }
 p, h3 {
     font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .video-portada {
@@ -113,7 +120,7 @@ p, h3 {
 .product {
     color: #000;
     max-width: 800px;
-    height: 165px;
+    height: auto;
     padding: 13px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -179,9 +186,7 @@ input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
 }
-footer .logo {
-    width: 50px;
-}
+
 footer {
     align-items: center;
     display: flex;
@@ -191,6 +196,9 @@ footer {
     background: #e8e8e8;
     margin-top: 100px;
     border-top: solid 20px #1C99C4;
+}
+.footer-row {
+    width: 400px;
 }
 .footer-row a {
     text-align: center;
@@ -236,4 +244,73 @@ span {
     height: 70px;
     margin: 0 auto;
     margin-top: 15px;
+}
+
+
+@media (max-width: 1168px) {
+    span {
+        font-size: 60px;
+    }
+    .cifras-bloque p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    li {
+        font-size: 14px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .portada video {
+        height: auto;
+    }
+    .cifras-bloque {
+        margin: 0 0 30px;
+        width: 100%;
+    }
+    .cifras-bloque p {
+        font-size: 15px;
+    }
+    span {
+        font-size: 60px;
+    }
+    .cifras-site {
+        flex-direction: column;
+    }
+
+    video {
+        width: 230px;
+        height: 404px;
+    }
+    .videos {
+        height: 425px;
+    }
+}
+@media (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container :only-child {
+        margin: 0 0 20px;
+    }
+}
+@media (max-width: 500px) {
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        height: 1338px;
+    }
+    figure {
+        margin: 0 0 30px;
+    }
+    .footer-container {
+        width: 300px;
+    }
+    .footer-row {
+        width: 356px;
+    }
 }
