@@ -313,4 +313,7 @@ span {
     .footer-row {
         width: 356px;
     }
+    footer {
+        padding: 50px;
+    }
 }
