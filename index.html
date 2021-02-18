@@ -25,7 +25,6 @@
                 <a href="#ganadores"><li>Ganadores</li></a>
                 <a href="#productos"><li>Productos</li></a>
                 <a href="#contacto"><li>Contacto</li></a>
-                <li>B2B</li>
             </ul>
         </div>
         <div class="redes">
@@ -34,13 +33,13 @@
     </header>
     <main>
         <section class="portada">
-            <video preload="true" autoplay="autoplay" loop volume="0"  class="video-portada">
+            <video preload="true" autoplay muted="muted" loop="loop" class="video-portada">
 				<source src="video/portada.mp4"> 
 			</video>
         </section>
         <section id="quienes-somos" class="container info-encuestamepe">
             <h2>¿Qué es encuestame.pe?</h2>
-            <p>Somos una empresa peruana que cuenta con profesionales con más de 10 años de experiencia en estudios sociales. Utilizamos diversos algoritmos y enfoques para lograr obtener información representativa y válida. Nos enfocamos en diseños experimentales y semi-experimentales</p>
+            <p>Somos una empresa peruana que cuenta con profesionales con más de 10 años de experiencia en estudios sociales. Utilizamos diversos algoritmos y enfoques para lograr obtener información representativa y válida. Nos enfocamos en diseños experimentales y semi-experimentales.</p>
             <!--Descripción-->
         </section>
         <section class="container-cifras">
@@ -114,10 +113,10 @@
         </section>
         <section id="contacto" class="container contacto">
             <h2>Ponte en contacto con nosotros</h2>
-            <form action="">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Nombre y apellido">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <form action="enviar.php" method="post">
+                <input name="mail" type="text" placeholder="Email">
+                <input name="name" type="text" placeholder="Nombre y apellido">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 <input type="submit" value="Enviar">
             </form>
         </section>
@@ -128,8 +127,8 @@
                 <img src="img/logo_slogan_color.png" alt="">
             </div>
             <div class="footer-row">
-                <a href=""><p>Términos y condiciones</p></a>
-                <a href=""><p>Calle Los Álamos Mza. F31 Lote. 12, Urb. Santa María, 4ta etapa Lima - Lima - Carabayllo Lima, Perú.</p></a>
+                <a target="_blank" href="https://docs.google.com/document/d/1II7LwPqR62NVXErdiPKcfcX_ELLuN2fiKZrW6FVeBp0/edit"><p>Términos y condiciones</p></a>
+                <a href="#"><p>Calle Los Álamos Mza. F31 Lote. 12, Urb. Santa María, 4ta etapa Lima - Lima - Carabayllo Lima, Perú.</p></a>
             </div>
             <div class="redes">
                 <a href="https://www.facebook.com/encuestamepetuopinionvale/" target="_blank"><img src="img/logotipo-circular-de-facebook.png" alt=""></a>
