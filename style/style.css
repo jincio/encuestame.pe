@@ -155,6 +155,17 @@ form {
     flex-direction: column;
     margin-top: 20px;
 }
+.contacto p {
+    margin: 35px auto;
+    display: block;
+    max-width: 400px;
+    text-align: center;
+}
+.contacto span {
+    color: #1E98C4;
+    font-size: 20px;
+    margin-top: 10px;
+}
 input, textarea {
     margin: 10px;
     border: solid 1px #000;
