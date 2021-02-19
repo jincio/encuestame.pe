@@ -139,9 +139,28 @@ a {
     font-size: 1.4rem;
     text-align: left;
     margin-bottom: 15px;
+    color: #fff;
 }
 .product p{
     font-size: 20px;
+    color: #fff;
+}
+.product a {
+    font-size: 20px;
+    margin-bottom: -4px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.product img {
+    width: 20px;
+    margin-left: 5px;
+    filter: invert(1);
+}
+.product a:hover {
+    transform: translateX(5px);
 }
 
 .contacto h2, .container-productos h2 {
