@@ -13,11 +13,14 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/code.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo_slogan_color.png" alt="">
+            <a href="./index.html"><img src="img/logo_slogan_color.png" alt=""></a>
         </div>
         <div class="menu">
             <ul>
@@ -25,13 +28,14 @@
                 <a href="#ganadores"><li>Ganadores</li></a>
                 <a href="#productos"><li>Productos</li></a>
                 <a href="#contacto"><li>Contacto</li></a>
+                <a href="#consulta"><li>Consulta tu saldo</li></a>
             </ul>
         </div>
         <div class="redes">
             <a href="https://www.facebook.com/encuestamepetuopinionvale/" target="_blank"><img src="img/logotipo-circular-de-facebook.png" alt=""></a>
         </div>
     </header>
-    <main>
+    <main class="Main">
         <section class="portada">
             <video preload="true" autoplay muted="muted" loop="loop" class="video-portada">
 				<source src="video/portada.mp4"> 
@@ -47,7 +51,7 @@
                 <div class="cifras-site">
                     <div class="cifras-bloque num cifra-1">
                         <div class="auto num-text">
-                            <span class="counter" data-count="14">0</span>
+                            <span class="counter" data-count="9">0</span>
                             <p>Encuestas han sido realizadas</p>
                             <div class="icono">
                                 <img src="img/encuesta.png" alt="" width="70px">
@@ -56,7 +60,7 @@
                     </div>
                     <div class="cifras-bloque num cifra-2">
                         <div class="auto num-text">
-                            <span class="counter" data-count="17673">0</span>
+                            <span class="counter" data-count="8032">0</span>
                             <p>Personas han participado</p>
                             <div class="icono">
                                 <img src="img/apoyo.png" alt="" width="70px">
@@ -65,7 +69,7 @@
                     </div>
                     <div class="cifras-bloque num cifra-3">
                         <div class="auto num-text">
-                            <span class="counter" data-count="3450">0</span>
+                            <span class="counter" data-count="2200">0</span>
                             <p>Soles han sido repartidos en premios</p>
                             <div class="icono">
                                 <img src="img/dinero.png" alt="" width="70px">
@@ -114,10 +118,14 @@
                 </div>
             </div>
         </section>
+        <section id="consulta" class="full-w">
+            <h2>Consulta tu saldo</h2>
+            <p>Conoce cuanto has acumulado respondiendo encuestas</p>
+            <button id="consulta-button">Consulta aquí</button>
+        </section>
         <section id="contacto" class="container contacto">
             <h2>Ponte en contacto con nosotros</h2>
-            <p>Escríbenos a <span>administrador@encuestame.pe</span></p>
-            <p>Puedes escribirnos al WhatsApp <span>987654321</span></p>
+            <p>Escríbenos a <span>contacto@encuestame.pe</span></p>
             <!--<form action="enviar.php" method="post">
                 <input name="mail" type="text" placeholder="Email">
                 <input name="name" type="text" placeholder="Nombre y apellido">
@@ -126,6 +134,49 @@
             </form>-->
         </section>
     </main>
+
+
+
+    <main class="consultaSaldoMain">
+        <div class="container consulta-main">
+            <h2>Participa en nuestras encuestas, acumula ganancias y entra al sorteo por premios de S/.100, S/.200, S/.300 ¡y hasta S/.800!</h2>
+            <div class="tags">
+                <div class="tag">
+                    <span>#PremioMayor</span>
+                    <p>Completa una encuesta y participa automáticamente en los sorteos.</p>
+                </div>
+                <div class="tag">
+                    <span>#FielSeguidor</span>
+                    <p>Los primeros 100 en responder una encuesta acumulan S/.1 automáticamente</p>
+                </div>
+                <div class="tag">
+                    <span>#FielEnPotencia</span>
+                    <p>Del 101 al 200 en llenar una encuesta acumulan S/.0,50 automáticamente</p>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-form container-element">
+                    <div>
+                        <p>¿Cuánto vas acumulando?</p>
+                        <span>Correo electrónico o número de teléfono</span>
+                        <form action="">
+                            <input id="input_usuario" type="text" name="dato">
+                            <button id="contactSend">Consultar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="respuesta">
+            <p class="result">Cargando...</p>
+            <!-- <p class="aviso">
+                El premio mayor se transfiere inmediatamente al ganador. Para cobrar lo recaudado en #Fiel Seguidor y #FielEnPotencia debes acumular mínimo S/.3. Podrán ser transferidos a tu cuenta (BCP/BBVA) o también vía Yape y Plin.
+            </p> -->
+        </div>
+    </main>
+
+
+
     <footer>
         <div class="footer-container">
             <div class="logo">
@@ -140,5 +191,5 @@
             </div>
         </div>
     </footer>
-</body>
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>
