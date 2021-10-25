@@ -32,3 +32,16 @@ var st = $(window).scrollTop();
         }
 
     });
+
+    const rp = () => {
+        $('.container-main').css('display', 'block');
+        $('#respuesta').css('display', 'none');
+    }
+    const hola = () => {
+        $('.consultaSaldoMain').css('display', 'block');
+        $('.Main').css('display', 'none');
+    }
+
+    $(document).ready(function() {
+        $('#consulta-button').click(hola);
+    });
